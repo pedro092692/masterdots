@@ -4,8 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masterdots game</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <!-- header -->
+    <header>
+        <img src="img/logo.png" alt="lapp logo" width="120">
+    </header>
+    <!-- form -->
+    <main>
+        <form action="#">
+            <!-- nicname section -->
+            <div class="itemform">
+                <label for="nic">Introduce tu nickname</label>
+                <input type="text" value="@" name="nicka" id="nicka" disabled>
+                <input type="text" name="nick" id="nick">
+            </div>
+            <!-- email section -->
+            <div class="itemform">
+                <label for="email">Introduce tu correo electrónico</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <!-- field game size section -->
+            <div class="itemform">
+                <label for="game_size">Tamanio del juego</label>
+                <select name="game_size" id="game_size">
+                    <option value="">--Por favor elije un tamanio--</option>
+                    <option value="1">4x4</option>
+                    <option value="2">5x5</option>
+                    <option value="3">6x6</option>
+                </select>
+            </div>
+            <div class="itemform">
+                <input type="submit" value="JUGAR">
+            </div>
+        </form>
+    </main>
+    <!-- footer -->
+    <footer>
+        <p>Curso Frotend HTML, CSS ygit  JS</p>
+    </footer>
 </body>
 </html>

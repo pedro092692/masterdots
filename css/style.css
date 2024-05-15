@@ -1,0 +1,80 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: #F5F5F5;
+}
+
+header, footer{
+    text-align: center;
+    width: 300px;
+    margin: 30px auto 0 auto;
+}
+
+main{
+    width: 300px;
+    margin: 30px auto 0 auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, select{
+    font-family: "Montserrat", sans-serif;
+}
+
+input{
+    display: inline;
+    width: 236px;
+    border: 1px solid #BDBDBD;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+select{
+    width: 100%;
+    border: 1px solid #BDBDBD;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 8px;
+    
+}
+
+input[type=email]{
+    font-weight: 600;
+    border-radius: 8px;
+    width: 276px;
+}
+
+input[type=submit]{
+    background-color: #01579B;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+    width: 100%;
+}
+
+footer{
+    font-weight: 200;
+}
+
+/* ids */
+
+#nicka{
+    float: left;
+    width: 20px;
+    border-radius: 5px 0px 0px 5px;
+    background-color: #BDBDBD;
+    text-align: center;
+    padding: 10px;
+}
