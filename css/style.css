@@ -78,3 +78,49 @@ footer{
     text-align: center;
     padding: 10px;
 }
+
+/* class */
+.form-error{
+    display: none;
+    font-size: 14px;
+    color: red;
+    margin: 8px 0;
+}
+
+.avatar-container{
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    flex-wrap: nowrap;
+}  
+
+
+.avatar-container .avatargrid{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.avatar-container .avatarItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.avatargrid .avatar-img{
+    width: 50px;
+    cursor: pointer;
+}
+
+.avatar-container .selected-avatar{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 8px;
+
+}
