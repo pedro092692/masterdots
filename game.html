@@ -6,8 +6,45 @@
     <title>Masterdots</title>
 </head>
 <body>
-    <h1>Welcome to masterdots</h1>
-</body>
+    <main>
+        <div id="game_container">
+            <div id="game">
+                <div class="container_item"><div class="item"></div></div>
+                <div class="container_item"><div class="item"></div></div>
+                <div class="container_item"><div class="item"></div></div>
+                <div class="container_item"><div class="item"></div></div>
+                <div class="container_item"><div class="item"></div></div>
+                <div class="container_item"><div class="item"></div></div>
+                <div class="container_item"><div class="item"></div></div>
+                <div class="container_item"><div class="item"></div></div>
+                <div class="container_item"><div class="item"></div></div>
+            </div>
+
+            <div id="game_title">
+                <p>Masterdots</p>
+            </div>
+        </div>
+        <div id="user_container">
+            <form action="game.html" id="input_form">
+                <div class="item_form">
+                    <img src="./img/1.png" alt="avatar">
+                    <input type="text" id="nick" value="nick" readonly>
+                </div>
+                <div class="item_form">
+                    <label for="score">Score</label>
+                    <input type="text" id="score" value="0"  class="game_input" readonly>
+                </div>
+                <div class="item_form">
+                    <label for="time">remaining time</label>
+                    <input type="text" id="time" value="30" class="game_input" readonly>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        Masterdots Game
+    </footer>
     <script src="js/user_data.js"></script>
     <script src="js/game.js"></script>
+</body>
 </html>
