@@ -68,6 +68,11 @@ function countdown(){
             item.removeEventListener('mouseover', continue_mark);
         }
         document.removeEventListener('mouseup', end_mark);
+
+        //change z-index
+        document.getElementById('end_game').style.zIndex = "2";
+        document.getElementById('game').style.zIndex = "1";
+        document.getElementById('new_game').addEventListener('click', (e)=>location.reload());
     }
 }
 

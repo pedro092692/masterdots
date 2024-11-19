@@ -28,9 +28,23 @@ main{
     grid-column: auto;
 }
 
-/* stylos for game grid */
+/* styles for game grid */
+
+main .end-game{
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #38384B;
+    z-index: -10;
+    border-radius: 8px 8px 0px 0px;
+    height: 91%;
+    width: 100%;
+}
 
 main #game_container{
+    position: relative;
     display: flex;
     flex-direction: column;
 }
