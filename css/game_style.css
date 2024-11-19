@@ -30,17 +30,21 @@ main{
 
 /* styles for game grid */
 
-main .end-game{
+.end-game{
 
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #38384B;
     z-index: -10;
     border-radius: 8px 8px 0px 0px;
     height: 91%;
     width: 100%;
+}
+
+.end-game-color{
+    background-color: #38384B;
+    transition: background-color 0.4s;
 }
 
 main #game_container{
@@ -79,10 +83,12 @@ main #game_container{
 
 .red{
     background-color: #fd0c49;
+    transition: background-color 0.4s;
 }
 
 .green{
     background-color: #7ac943;
+    transition: background-color 0.4s;
 }
 
 #game_title{

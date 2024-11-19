@@ -70,6 +70,7 @@ function countdown(){
         document.removeEventListener('mouseup', end_mark);
 
         //change z-index
+        document.getElementById('end_game').classList.add('end-game-color');
         document.getElementById('end_game').style.zIndex = "2";
         document.getElementById('game').style.zIndex = "1";
         document.getElementById('new_game').addEventListener('click', (e)=>location.reload());
