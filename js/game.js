@@ -10,6 +10,7 @@ var id_markeds = [];
 var marked_class;
 var size;
 var colors = ['green', 'red'];
+var id_interval;
 
 //random number funcion 
 function get_random_int(max){
@@ -53,6 +54,23 @@ function draw_game_size(){
     document.getElementById('game').innerHTML = items;
 }
 
+//countdown function 
+
+function countdown(){
+    let remaining_time = parseInt(document.getElementById('time').value) - 1;
+    document.getElementById('time').value = remaining_time;
+    if(remaining_time ==0){
+        clearInterval(id_interval);
+        // finish all events
+        const items = document.getElementsByClassName('item');
+        for(let item of items){
+            item.removeEventListener('mousedown', start_mark);
+            item.removeEventListener('mouseover', continue_mark);
+        }
+        document.removeEventListener('mouseup', end_mark);
+    }
+}
+
 
 // calcule adjacent
 
@@ -78,6 +96,8 @@ function set_game_events(){
         item.addEventListener('mouseover', continue_mark);
     }
     document.addEventListener('mouseup', end_mark);
+    // countdown
+    id_interval = setInterval(countdown, 1000);
 }
 
 // game functions
