@@ -7,6 +7,7 @@ var nick;
 var current_game_size; 
 var current_email;
 var geo_locate;
+var current_avatar_img;
 
 /**
  * Store user data into session variable
@@ -14,11 +15,12 @@ var geo_locate;
  * @param { HTMLElement } game_size game size
  * @param { HTMLElement } email user email
  */
-function user_data(nickname, game_size, email){
+function user_data(nickname, game_size, email, avatarImage){
     sessionStorage.setItem('nick', nickname.value);
     sessionStorage.setItem('email', email.value);
     sessionStorage.setItem('game_size', game_size.value);
     sessionStorage.setItem('geo-locate', geo_locate);
+    sessionStorage.setItem('avatarImage', avatarImage.src);
 }
 
 /**
@@ -29,6 +31,7 @@ function get_user_data(){
     nick = sessionStorage.getItem('nick');
     current_game_size = sessionStorage.getItem('game_size');
     current_email = sessionStorage.getItem('email');
+    current_avatar_img = sessionStorage.getItem('avatarImage');
     console.log(nick, current_email, current_game_size);
 }
 

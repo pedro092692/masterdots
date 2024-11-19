@@ -47,16 +47,27 @@ main #game_container{
 }
 
 #game .container_item{
-    padding: 8px;
-    border: 1px solid #B9B9B9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 75px;
+    min-height: 75px;
     border-radius: 4px;
 }
 
-.container_item .item{
-    border-radius: 8px;
+.item{
+    border-radius: 50%;
     background-color: #7ac943;
     width: 50px;
     height: 50px;
+}
+
+.red{
+    background-color: #fd0c49;
+}
+
+.green{
+    background-color: #7ac943;
 }
 
 #game_title{

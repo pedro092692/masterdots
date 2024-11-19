@@ -52,7 +52,7 @@ function checkForm(event){
         return false;
     }
     
-    user_data(nickname, game_size, email);
+    user_data(nickname, game_size, email, avatarImage);
     user_history(nickname);
     return true;
 
