@@ -30,18 +30,43 @@ function draw_game_size(){
         items+= `<div class="container_item"><div class="item ${colors[radom_color]}"></div></div>`;
 
     }
-
     document.getElementById('game').innerHTML = items;
 }
 
+// game events 
+function set_game_events(){
+    const items = document.getElementsByClassName('item');
+    for(let item of items){
+        item.addEventListener('mousedown', start_mark);
+    }
+}
+
+// game functions
+function start_mark(event){
+    let item = event.target;
+    let container_item = item.parentElement;
+    if(item.classList.contains('red')){
+        container_item.classList.add('red');
+    }else{
+        container_item.classList.add('green');
+    }
+    console.log('click on a circle');
+}
+
+
 // capture user data
 get_user_data();
+
 // check user data
 if(!check_user_data()){
     location = 'index.html';
 }
+
 // fill user data form
 fill_user_form();
 
 // draw game board
 draw_game_size();
+
+// set game events
+set_game_events();
